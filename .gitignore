@@ -1,0 +1,18 @@
+# Obsidian per-device state
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+
+# secrets never live in a vault
+.env
+.env.*

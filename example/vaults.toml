@@ -1,0 +1,23 @@
+# Registry of the vaults in this workspace. Canon: change it by pull request.
+# path        folder of the vault, relative to the workspace
+# repo        git repository holding that vault (one repo per vault = one access list per vault)
+# private_terms  words that must never appear in any other vault (checked by `vaultctl check`)
+# may_mention    vaults whose private terms this vault is allowed to contain ("*" = all)
+
+[company]
+path = "company"
+repo = "your-org/vault-company"
+description = "The company itself: offers, positioning, methods, agents, skills"
+
+[owner]
+path = "owner"
+repo = "your-org/vault-owner"
+description = "Owner only: inbox, journal, agents' shared memory, personal admin"
+private_terms = ["Pinewood Lane"]
+may_mention = ["*"]
+
+[acme-bakery]
+path = "clients/acme-bakery"
+repo = "your-org/vault-client-acme-bakery"
+description = "Client vault: Acme Bakery (fictional)"
+private_terms = ["Sam Lee", "Project Croissant"]
